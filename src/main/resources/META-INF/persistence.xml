@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="incasDB" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.edu.unifei.ecot13.projeto.incas.Batalha</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Culto</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Deus</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Engenheiro</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Ferramenta</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Pastor</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Pessoa</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.PoderMilitar</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Regiao</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Sacerdote</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Soldado</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Casa</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Construcao</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Forte</class>
+        <class>br.edu.unifei.ecot13.projeto.incas.Templo</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/incas?useTimezone=true&amp;serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="incas"/>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="incas"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>
